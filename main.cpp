@@ -46,22 +46,22 @@ int main(int argc, char *argv[])
   while(1) {
   startInt = mymillis();
     //Get all parameters
-  printf("\nAccelerometer:\n");
-  printf(" X = ");
-  printf("%f\n",myIMU.readAccelX());
-  printf(" Y = ");
-  printf("%f\n",myIMU.readAccelY());
-  printf(" Z = ");
-  printf("%f\n",myIMU.readAccelZ());
+  //printf("\nAccelerometer:\n");
+  //printf(" X = ");
+  //printf("%f\n",myIMU.readAccelX());
+  //printf(" Y = ");
+  //printf("%f\n",myIMU.readAccelY());
+  //printf(" Z = ");
+  //printf("%f\n",myIMU.readAccelZ());
 
   // Not supported by hardware, so will return NAN
-  printf("\nGyroscope:\n");
-  printf(" X = ");
-  printf("%f",myIMU.readGyroX());
-  printf(" Y = ");
-  printf("%f",myIMU.readGyroY());
-  printf(" Z = ");
-  printf("%f",myIMU.readGyroZ());
+  //printf("\nGyroscope:\n");
+  //printf(" X = ");
+  //printf("%f",myIMU.readGyroX());
+  //printf(" Y = ");
+  //printf("%f",myIMU.readGyroY());
+  //printf(" Z = ");
+  //printf("%f",myIMU.readGyroZ());
 
   printf("\nMagnetometer:\n");
   printf(" X = ");
@@ -69,13 +69,13 @@ int main(int argc, char *argv[])
   printf(" Y = ");
   printf("%f",myIMU.readMagY());
   printf(" Z = ");
-  printf("%f",myIMU.readMagZ());
+  printf("%f \n",myIMU.readMagZ());
 
-  printf("\nThermometer:\n");
-  printf(" Degrees C = ");
-  printf("%f",myIMU.readTempC());
-  printf(" Degrees F = ");
-  printf("%f",myIMU.readTempF());
+  //printf("\nThermometer:\n");
+  //printf(" Degrees C = ");
+  //printf("%f",myIMU.readTempC());
+  //printf(" Degrees F = ");
+  //printf("%f",myIMU.readTempF());
   
   double temp = myTC.getTemp();
   
